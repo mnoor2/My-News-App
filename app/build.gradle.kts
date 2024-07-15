@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "edu.msudenver.cs3013.project2_s24"
+    namespace = "edu.msudenver.cs3013.mynewsapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "edu.msudenver.cs3013.project2_s24"
+        applicationId = "edu.msudenver.cs3013.mynewsapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -36,13 +36,17 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.appcompat:appcompat:1.6.0")
+    implementation("com.google.android.material:material:1.7.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

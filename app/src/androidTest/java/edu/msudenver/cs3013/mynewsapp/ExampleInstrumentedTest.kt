@@ -1,4 +1,4 @@
-package edu.msudenver.cs3013.project2_s24
+package edu.msudenver.cs3013.mynewsapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

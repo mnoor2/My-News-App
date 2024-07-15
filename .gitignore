@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/src/main/java/edu/msudenver/cs3013/mynewsapp/ApiKey.kt

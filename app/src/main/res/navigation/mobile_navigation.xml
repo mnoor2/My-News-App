@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_us">
+
+    <fragment
+        android:id='@+id/nav_world'
+        android:name='edu.msudenver.cs3013.mynewsapp.WorldFragment'
+        android:label='World News'
+        tools:layout='@layout/fragment_world' />
+
+    <fragment
+        android:id='@+id/nav_us'
+        android:name='edu.msudenver.cs3013.mynewsapp.UsFragment'
+        android:label='US News'
+        tools:layout='@layout/fragment_us' />
+</navigation>
